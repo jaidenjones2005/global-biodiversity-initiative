@@ -28,3 +28,14 @@ Finding the highest and lowest populations takes O(n) because the program must c
 
 This phase helped me understand the difference between looking up a single value and analyzing an entire collection of data.
 
+## Phase 4: Validation & Reflection
+
+In Phase 4, I tested my Global Biodiversity Initiative program using different sighting files to check for possible errors.
+
+I tested an empty file, a file where each species appeared once, and a file where the same species appeared multiple times. These tests helped me check whether the HashMap updated population counts correctly.
+
+One edge case I looked at was an empty registry. I used isEmpty() to prevent the program from displaying incorrect minimum and maximum values when no species were available.
+
+During the code review, I also noticed that species names are case-sensitive. For example, Deer and deer would be treated as different species. One possible improvement would be to make the search case-insensitive.
+
+Overall, this project helped me understand how HashMaps can store and update data efficiently. I also learned why testing different scenarios is important for making a program more reliable.
