@@ -16,3 +16,15 @@ The main challenge was understanding how to read the file and update the HashMap
 
 This phase helped me understand how HashMaps can be used to organize and update information from external files.
 
+## Phase 3: Population Analysis
+
+In Phase 3, I added a feature that finds the species with the highest and lowest population counts in the registry.
+
+I used a loop to go through the HashMap and compare each species' count to the current maximum and minimum values.
+
+Looking up one species by name in a HashMap is usually O(1), meaning it takes about the same amount of time regardless of how many species are stored.
+
+Finding the highest and lowest populations takes O(n) because the program must check every species in the HashMap.
+
+This phase helped me understand the difference between looking up a single value and analyzing an entire collection of data.
+

@@ -53,6 +53,45 @@ public class Main {
             );
         }
 
+        // Phase 3: Population Analysis
+        System.out.println("\n=== Population Analysis ===");
+
+        String mostFrequentSpecies = "";
+        String leastFrequentSpecies = "";
+
+        int maxCount = Integer.MIN_VALUE;
+        int minCount = Integer.MAX_VALUE;
+
+        for (String species : speciesRegistry.keySet()) {
+
+            int count = speciesRegistry.get(species);
+
+            if (count > maxCount) {
+                maxCount = count;
+                mostFrequentSpecies = species;
+            }
+
+            if (count < minCount) {
+                minCount = count;
+                leastFrequentSpecies = species;
+            }
+        }
+
+        if (speciesRegistry.isEmpty()) {
+            System.out.println("No species available for analysis.");
+        } else {
+            System.out.println(
+                    "Most Frequent Species: "
+                            + mostFrequentSpecies + " (" + maxCount + ")"
+            );
+
+            System.out.println(
+                    "Least Frequent Species: "
+                            + leastFrequentSpecies + " (" + minCount + ")"
+            );
+        }
+
+
         // Query a species
         Scanner scanner = new Scanner(System.in);
 
