@@ -6,3 +6,13 @@ I think a HashMap is better for this project than an array or ArrayList because 
 
 This makes the program easier to manage as more species are discovered and added to the registry. I also added a message for when a species is not found.
 
+## Phase 2: The Sighting Log
+
+In Phase 2, I updated my program to read animal sightings from a text file instead of entering everything manually.
+
+I used a Scanner to read the file one line at a time. If a species was already in the HashMap, I increased its population count by one. If the species wasn't already registered, I added it with a starting count of one.
+
+The main challenge was understanding how to read the file and update the HashMap correctly. I also learned how to handle a missing file using try and catch.
+
+This phase helped me understand how HashMaps can be used to organize and update information from external files.
+
